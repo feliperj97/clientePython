@@ -1,7 +1,7 @@
 ﻿from suds.client import Client
 a = float(input("Digite o primeiro número: "))
 b = float(input("Digite o segundo número: "))
-op = int(input("Escolha a operação - 1) Soma 2) Subtração"))
+op = int(input("Escolha a operação - 1) Soma 2) Subtração 3) Multiplicação 4) Divisão"))
 
 if op == 1:
     print(Client('http://localhost:10002/calculadora?wsdl').service.Somar(a, b))
